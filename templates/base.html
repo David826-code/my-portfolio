@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav>
+    <a href="/">Home🏠</a>
+    <a href="/about">Aboutℹ️</a>
+    <a href="/skills">Skills🔨</a>
+    <a href="/projects">Projects🏢</a>
+    <a href="/contact">Contact📞</a>
+</nav>
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>&copy; {{ year }}</footer>
+</body>
+</html>
